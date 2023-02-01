@@ -20,7 +20,13 @@ mongoose.connect("mongodb+srv://yashsingh:8i1kfhU26wUDrXft@cluster0.e53dru9.mong
 
 app.use(cors())
 
-app.use('/', route);
+app.use('/', (req,res)=>{
+	res.json(
+		{messege:"ckjasnckjskc"}
+	)
+
+	
+});
 
 
 
